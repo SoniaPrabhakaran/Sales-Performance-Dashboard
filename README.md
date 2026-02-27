@@ -1,4 +1,4 @@
-# Sales-Performance-Dashboard
+# Superstore-Sales-Performance-Dashboard
 
 This project integrates **SQL**, **Python ETL**, **PostgreSQL**, and **Power BI** to deliver a comprehensive **Sales Performance Dashboard**. 
 It demonstrates an end-to-end workflow: from raw data cleaning and loading, to analytics views, and finally interactive visualizations.
@@ -80,7 +80,7 @@ python python/staging.py
 - **Fact Table**: `fact_sales`
 - **Dimensions**: `dim_date`, `dim_customer`, `dim_product`, `dim_region`
 
-### Key Views
+### Key Views and KPIs 
 
 - `v_quarterly_performance` → Quarterly sales, profit, orders
 - `v_customer_segmentation` → Segment‑wise spend & profitability
@@ -91,3 +91,38 @@ python python/staging.py
 - `v_technology_yoy` → Technology category YoY growth
 - `v_top_products_profit` → Top 15 products by profit
 - `v_segment_spend_frequency` → Customer spend vs frequency
+- `superstore_kpi_region_market`→ Sales, Profit, Margin by market
+
+## Power BI Dashboard Pages
+
+1. **Overview** → KPIs, Quarterly Trend, YoY Growth by Category
+2. **Regional & Market Analysis** → Regional Sales and margin overview, Growth Opportunities
+3. **Product Performance** → profit contribution by category, seasonal trends, Top products by profit 
+4. **Customer Segmentation** → Spend vs Frequency, Annual revenue and growth trends
+5. **Technology Focus** → KPIs, Technology trends by year, Top performing subcategories
+
+📐 Core DAX Measures
+
+Total Revenue = SUM ( 'fact_sales'[sales] )
+Total Profit = SUM ( 'fact_sales'[profit] )
+Total Orders = DISTINCTCOUNT ( 'fact_sales'[order_id] )
+Profit Margin % = DIVIDE ( [Total Profit], [Total Revenue], 0 )
+
+*See* `/docs/DAX.md` *for full list of measures.)*
+
+## 📸 Dashboard Screenshots
+
+- [Screenshot 1: Overview Page]
+- [Screenshot 2: Regional and Market Analysis]
+- [Screenshot 3: Product Performance]
+- [Screenshot 4: Customer Segmentation]
+- [Screenshot 5: Technology Focus]
+
+## 📂 Deliverables
+
+- Power BI file (`pbix/SalesDashboard.pbix`)
+- SQL scripts (`sql/`)
+- Python loader (`python/staging.py`)
+- Screenshots (`/screenshots`)
+- README.md (this file)
+  
