@@ -17,8 +17,6 @@ Automated **data cleaning and loading** with Python - **SQL schema** and reusabl
 - Records: 9,994 sales transactions (2014–2017).
 - Attributes: Orders, Customers, Products, Regions, Markets, Shipping, Profitability.
 
-⚠️ Note: The dataset is not included in this repo to keep it lightweight. Please download it manually from Kaggle.
-
 ## Key Insights
 
 - **Seasonality Matters** → Q4 consistently drives peak sales, suggesting promotional campaigns should be concentrated here.
