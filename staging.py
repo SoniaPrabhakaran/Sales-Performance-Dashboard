@@ -3,9 +3,8 @@ import pandas as pd
 from sqlalchemy import create_engine, Numeric, Integer, String, Date
 
 # 1. Load Excel file
-df = pd.read_excel(
-    r"C:\Users\sonia\OneDrive\Bilder\Dokumente\Project_portfolio\SuperStore_Orders_Final.xlsx"
-)
+df = pd.read_excel("data/superstore_orders.xlsx")
+
 # 2. Strip spaces from column names
 df.columns = df.columns.str.strip()
 
@@ -78,4 +77,5 @@ df.to_sql(
     method="multi"   # ensures psycopg2 binds values correctly
 )
 print("Data loaded into staging table successfully.")
+
 
