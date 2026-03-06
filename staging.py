@@ -3,7 +3,9 @@ import pandas as pd
 from sqlalchemy import create_engine, Numeric, Integer, String, Date
 
 # 1. Load Excel file
-df = pd.read_excel("data/superstore_orders.xlsx")
+
+file_path = os.path.join("data", "superstore_orders.xlsx")
+df = pd.read_excel(file_path)
 
 # 2. Strip spaces from column names
 df.columns = df.columns.str.strip()
@@ -77,5 +79,6 @@ df.to_sql(
     method="multi"   # ensures psycopg2 binds values correctly
 )
 print("Data loaded into staging table successfully.")
+
 
 
