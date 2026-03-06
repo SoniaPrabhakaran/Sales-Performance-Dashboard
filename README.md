@@ -17,6 +17,10 @@ Automated **data cleaning and loading** with Python - **SQL schema** and reusabl
 - Records: 9,994 sales transactions (2014–2017).
 - Attributes: Orders, Customers, Products, Regions, Markets, Shipping, Profitability.
 
+## ⚠️ Note
+The dataset used in this project has been placed inside the **`data/`** folder.  
+Please do not move or rename this file outside the folder, as the Python scripts reference it using the path:
+
 ## Key Insights
 
 - **Seasonality Matters** → Q4 consistently drives peak sales, suggesting promotional campaigns should be concentrated here.
