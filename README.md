@@ -32,7 +32,7 @@ Automated **data cleaning and loading** with Python - **SQL schema** and reusabl
 - **Customer Segmentation** → Revealed that Corporate customers spend more per order but order less frequently, while Consumers drive volume. This informs targeted marketing strategies.
 - **Technology Category Focus** → Demonstrated that Technology is the fastest‑growing and most profitable category, with Phones and Copiers leading sub‑category performance.
 - **Regional Contribution** → Highlighted untapped opportunities in certain markets (e.g., APAC and EU) where sales growth is strong but profit margins vary.
-- 
+  
 
 - ## Dataset
 
@@ -40,7 +40,7 @@ Automated **data cleaning and loading** with Python - **SQL schema** and reusabl
 - Records: 9,994 sales transactions (2014–2017).
 - Attributes: Orders, Customers, Products, Regions, Markets, Shipping, Profitability.
 
-- 
+  
 - ## Tools Used
 
 - **Excel** → Data cleaning.
