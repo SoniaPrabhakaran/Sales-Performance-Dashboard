@@ -102,10 +102,10 @@ python python/staging.py
 
 📐 Core DAX Measures
 
-Total Revenue = SUM ( 'fact_sales'[sales] )
-Total Profit = SUM ( 'fact_sales'[profit] )
-Total Orders = DISTINCTCOUNT ( 'fact_sales'[order_id] )
-Profit Margin % = DIVIDE ( [Total Profit], [Total Revenue], 0 )
+Total Revenue = SUM('superstore fact_sales'[sales])
+Total profit = SUM('superstore fact_sales'[profit])
+Total orders = DISTINCTCOUNT('superstore fact_sales'[order_id])
+Profit Margin % = DIVIDE( [Total profit], [Total Revenue], 0)
 
 *See* `/docs/DAX.md` *for full list of measures.)*
 
