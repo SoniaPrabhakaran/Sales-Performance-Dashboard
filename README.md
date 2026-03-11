@@ -123,7 +123,7 @@ python python/staging.py
 
 ## 📂 Deliverables
 
-- Power BI file (`pbix/SalesDashboard.pbix`)
+- Power BI file (`pbix/Sonia_Sales_Dashboard.pbix`)
 - SQL scripts (`sql/`)
 - Python loader (`python/staging.py`)
 - Screenshots (`/screenshots`)
